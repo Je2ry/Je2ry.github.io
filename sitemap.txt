@@ -1,3 +1,3 @@
-http://example.com/2022/03/13/Je2ry-s-Blog/
-http://example.com/2022/03/13/hello-world/
-http://example.com/
+http://github.com/2022/03/13/Je2ry-s-Blog/
+http://github.com/2022/03/13/hello-world/
+http://github.com/
