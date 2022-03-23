@@ -1,4 +1,4 @@
+http://github.com/2022/03/23/new-delete-vs-malloc-free/
 http://github.com/2022/03/13/Je2ry-s-Blog/
-http://github.com/2022/03/13/hello-world/
-http://github.com/2019/01/17/C++%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/
 http://github.com/
+http://github.com/categories/C/
