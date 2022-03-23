@@ -6,7 +6,7 @@
   <link href="http://github.com/atom.xml" rel="self"/>
   
   <link href="http://github.com/"/>
-  <updated>2022-03-23T10:04:14.609Z</updated>
+  <updated>2022-03-23T10:22:04.161Z</updated>
   <id>http://github.com/</id>
   
   <author>
@@ -17,36 +17,23 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>new/delete vs malloc/free</title>
-    <link href="http://github.com/2022/03/23/new-delete-vs-malloc-free/"/>
-    <id>http://github.com/2022/03/23/new-delete-vs-malloc-free/</id>
-    <published>2022-03-23T09:41:19.000Z</published>
-    <updated>2022-03-23T10:04:14.609Z</updated>
+    <title>new vs delete</title>
+    <link href="http://github.com/2022/03/23/new-vs-delete/"/>
+    <id>http://github.com/2022/03/23/new-vs-delete/</id>
+    <published>2022-03-23T10:11:39.000Z</published>
+    <updated>2022-03-23T10:22:04.161Z</updated>
     
-    <content type="html"><![CDATA[<p>####new和malloc的区别<br>1.new是关键字（也是操作符），需要编译器支持，malloc是库函数，需要头文件支持<br>2.参数。new申请内存空间不需要指定大小，malloc需要显示的指定内存大小<br>3.返回类型。new分配内存成功返回的是对象类型的指针，不需要类型转换，new是符合类型安全性的操作符。malloc内存分配成功返回void*,需要强制类型转换，将void*指针转换成我们需要的类型。<br>3.分配失败。new分配失败抛出bac_alloc异常。malloc返回NULL<br>4.自定义类型。new会先调用operator new函数申请足够的内存(底层由malloc实现)。然后调用类的构造函数，初始化成员变量，最后返回自定义类型指针。delete先调用析构，在调用operator delete函数释放内存(通常底层使用free实现)。<br>    malloc&#x2F;free是库函数，只能动态的申请和释放内存，无法强制要求其做自定义类型对象构造和析构工作。<br>5.重载。new&#x2F;delete可以操作符重载，malloc不行<br>6.内存区域<br>new操作符从自由存储区(free store)上为对象动态分配内存空间，而malloc函数是从堆区分配内存。</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="new-x2F-delete和malloc-x2F-free的区别"><a href="#new-x2F-delete和malloc-x2F-free的区别" class="headerlink" title="new&#x2F;delete和malloc&#x2F;free的区别"></a>new&#x2F;delete和malloc&#x2F;free的区别</h3><ul><li>new是关键字（也是操作符），需要编译器支持，malloc是库函数，需要头文件支持。</li><li>参数。new申请内存空间不需要指定大小，malloc需要显示的指定内存大小。</li><li>返回类型。new分配内存成功返回的是对象类型的指针，不需要类型转换，new是符合类型安全性的操作符。malloc内存分配成功返回void*,需要强制类型转换，将void*指针转换成我们需要的类型。</li><li>分配失败。new分配失败抛出bac_alloc异常。malloc返回NULL。</li><li>自定义类型。new会先调用operator new函数申请足够的内存(底层由malloc实现)。然后调用类的构造函数，初始化成员变量，最后返回自定义类型指针。delete先调用析构，在调用operator delete函数释放内存(通常底层使用free实现)。<br>malloc&#x2F;free是库函数，只能动态的申请和释放内存，无法强制要求其做自定义类型对象构造和析构工作。</li><li>重载。new&#x2F;delete可以操作符重载，malloc不行</li><li>内存区域<br>new操作符从自由存储区(free store)上为对象动态分配内存空间，而malloc函数是从堆区分配内存。</li></ul><hr><h4 id="Free-Store-VS-Heap"><a href="#Free-Store-VS-Heap" class="headerlink" title="Free Store VS Heap"></a>Free Store VS Heap</h4><p>C++中，内存分为堆，栈，自由存储区，全局&#x2F;静态存储区，常量存储区。<br>堆是C和OS的术语，因为基本上所有的C++编译器默认使用堆来实现自由存储，即缺省的new和delete由malloc和free实现，这时候new分配的对象，说它在堆上也对，自由存储区也对（此时heap&#x3D;free store)。但如果使用操作符重载的方式，改用其他内存实现自由存储。这时候new的对象就在自由存储区，而不是堆了。</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;####new和malloc的区别&lt;br&gt;1.new是关键字（也是操作符），需要编译器支持，malloc是库函数，需要头文件支持&lt;br&gt;2.参数。new申请内存空间不需要指定大小，malloc需要显示的指定内存大小&lt;br&gt;3.返回类型。new分配内存成功返回的是对象类型的指</summary>
+    <summary type="html">&lt;h3 id=&quot;new-x2F-delete和malloc-x2F-free的区别&quot;&gt;&lt;a href=&quot;#new-x2F-delete和malloc-x2F-free的区别&quot; class=&quot;headerlink&quot; title=&quot;new&amp;#x2F;delete和malloc&amp;#x2</summary>
       
     
     
     
     <category term="C++" scheme="http://github.com/categories/C/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Je2ry&#39;s Blog</title>
-    <link href="http://github.com/2022/03/13/Je2ry-s-Blog/"/>
-    <id>http://github.com/2022/03/13/Je2ry-s-Blog/</id>
-    <published>2022-03-13T01:19:12.000Z</published>
-    <updated>2022-03-13T01:19:12.376Z</updated>
-    
-    
-    
     
     
   </entry>

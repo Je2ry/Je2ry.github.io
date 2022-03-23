@@ -2,18 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://github.com/2022/03/23/new-delete-vs-malloc-free/</loc>
+    <loc>http://github.com/2022/03/23/new-vs-delete/</loc>
     
     <lastmod>2022-03-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://github.com/2022/03/13/Je2ry-s-Blog/</loc>
-    
-    <lastmod>2022-03-13</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

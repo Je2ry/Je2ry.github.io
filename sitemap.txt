@@ -1,4 +1,3 @@
-http://github.com/2022/03/23/new-delete-vs-malloc-free/
-http://github.com/2022/03/13/Je2ry-s-Blog/
+http://github.com/2022/03/23/new-vs-delete/
 http://github.com/
 http://github.com/categories/C/
