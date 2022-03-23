@@ -6,7 +6,7 @@
   <link href="http://github.com/atom.xml" rel="self"/>
   
   <link href="http://github.com/"/>
-  <updated>2022-03-23T10:22:04.161Z</updated>
+  <updated>2022-03-23T10:32:51.933Z</updated>
   <id>http://github.com/</id>
   
   <author>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>new vs delete</title>
-    <link href="http://github.com/2022/03/23/new-vs-delete/"/>
-    <id>http://github.com/2022/03/23/new-vs-delete/</id>
+    <link href="http://github.com/2022/03/23/new-vs-malloc/"/>
+    <id>http://github.com/2022/03/23/new-vs-malloc/</id>
     <published>2022-03-23T10:11:39.000Z</published>
-    <updated>2022-03-23T10:22:04.161Z</updated>
+    <updated>2022-03-23T10:32:51.933Z</updated>
     
-    <content type="html"><![CDATA[<h3 id="new-x2F-delete和malloc-x2F-free的区别"><a href="#new-x2F-delete和malloc-x2F-free的区别" class="headerlink" title="new&#x2F;delete和malloc&#x2F;free的区别"></a>new&#x2F;delete和malloc&#x2F;free的区别</h3><ul><li>new是关键字（也是操作符），需要编译器支持，malloc是库函数，需要头文件支持。</li><li>参数。new申请内存空间不需要指定大小，malloc需要显示的指定内存大小。</li><li>返回类型。new分配内存成功返回的是对象类型的指针，不需要类型转换，new是符合类型安全性的操作符。malloc内存分配成功返回void*,需要强制类型转换，将void*指针转换成我们需要的类型。</li><li>分配失败。new分配失败抛出bac_alloc异常。malloc返回NULL。</li><li>自定义类型。new会先调用operator new函数申请足够的内存(底层由malloc实现)。然后调用类的构造函数，初始化成员变量，最后返回自定义类型指针。delete先调用析构，在调用operator delete函数释放内存(通常底层使用free实现)。<br>malloc&#x2F;free是库函数，只能动态的申请和释放内存，无法强制要求其做自定义类型对象构造和析构工作。</li><li>重载。new&#x2F;delete可以操作符重载，malloc不行</li><li>内存区域<br>new操作符从自由存储区(free store)上为对象动态分配内存空间，而malloc函数是从堆区分配内存。</li></ul><hr><h4 id="Free-Store-VS-Heap"><a href="#Free-Store-VS-Heap" class="headerlink" title="Free Store VS Heap"></a>Free Store VS Heap</h4><p>C++中，内存分为堆，栈，自由存储区，全局&#x2F;静态存储区，常量存储区。<br>堆是C和OS的术语，因为基本上所有的C++编译器默认使用堆来实现自由存储，即缺省的new和delete由malloc和free实现，这时候new分配的对象，说它在堆上也对，自由存储区也对（此时heap&#x3D;free store)。但如果使用操作符重载的方式，改用其他内存实现自由存储。这时候new的对象就在自由存储区，而不是堆了。</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="new-x2F-delete和malloc-x2F-free的区别"><a href="#new-x2F-delete和malloc-x2F-free的区别" class="headerlink" title="new&#x2F;delete和malloc&#x2F;free的区别"></a>new&#x2F;delete和malloc&#x2F;free的区别</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1.</span> new是关键字（也是操作符），需要编译器支持，malloc是库函数，需要头文件支持。</span><br><span class="line"></span><br><span class="line"><span class="bullet">2.</span> 参数。new申请内存空间不需要指定大小，malloc需要显示的指定内存大小。</span><br><span class="line"></span><br><span class="line"><span class="bullet">3.</span> 返回类型。new分配内存成功返回的是对象类型的指针，不需要类型转换，new是符合类型安全性的操作符。malloc内存分配成功返回void<span class="emphasis">*,需要强制类型转换，将void*</span>指针转换成我们需要的类型。</span><br><span class="line"></span><br><span class="line"><span class="bullet">4.</span> 分配失败。new分配失败抛出bac<span class="emphasis">_alloc异常。malloc返回NULL。</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">5. 自定义类型。new会先调用operator new函数申请足够的内存(底层由malloc实现)。然后调用类的构造函数，初始化成员变量，最后返回自定义类型指针。delete先调用析构，在调用operator delete函数释放内存(通常底层使用free实现)。malloc/free是库函数，只能动态的申请和释放内存，无法强制要求其做自定义类型对象构造和析构工作。</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">6. 重载。new/delete可以操作符重载，malloc不行</span></span><br><span class="line"><span class="emphasis"></span></span><br><span class="line"><span class="emphasis">7. 内存区域。new操作符从自由存储区(free store)上为对象动态分配内存空间，而malloc函数是从堆区分配内存。</span></span><br></pre></td></tr></table></figure><hr><h4 id="Free-Store-VS-Heap"><a href="#Free-Store-VS-Heap" class="headerlink" title="Free Store VS Heap"></a>Free Store VS Heap</h4><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">C++中，内存分为堆，栈，自由存储区，全局/静态存储区，常量存储区。</span><br><span class="line">堆是C和OS的术语，因为基本上所有的C++编译器默认使用堆来实现自由存储，即缺省的new和delete由malloc和free实现，这时候new分配的对象，说它在堆上也对，自由存储区也对（此时heap=free store)。但如果使用操作符重载的方式，改用其他内存实现自由存储。这时候new的对象就在自由存储区，而不是堆了。</span><br></pre></td></tr></table></figure>]]></content>
     
     
       
