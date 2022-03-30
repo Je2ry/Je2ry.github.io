@@ -1,3 +1,13 @@
+http://github.com/2022/03/29/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/
+http://github.com/2022/03/29/C-%E9%9D%A2%E8%AF%95%E9%A2%98/
+http://github.com/2022/03/23/Linux-c-%E9%80%9A%E4%BF%A1%E6%9E%B6%E6%9E%84%E5%AE%9E%E6%88%98%E7%AC%94%E8%AE%B0/
+http://github.com/2022/03/24/some-notes/
+http://github.com/2022/03/24/Cmake%E7%9B%B8%E5%85%B3/
 http://github.com/2022/03/23/new-delete-and-malloc-free/
 http://github.com/
 http://github.com/categories/C/
+http://github.com/categories/%E7%BC%96%E8%AF%91%E7%9B%B8%E5%85%B3/
+http://github.com/categories/C/Linux/
+http://github.com/categories/Cmake/
+http://github.com/categories/C/Algorithm/
+http://github.com/categories/Cmake/C/
