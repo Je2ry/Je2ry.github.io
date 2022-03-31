@@ -11,42 +11,6 @@
   </url>
   
   <url>
-    <loc>http://github.com/2022/03/29/C-%E9%9D%A2%E8%AF%95%E9%A2%98/</loc>
-    
-    <lastmod>2022-03-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://github.com/2022/03/23/Linux-c-%E9%80%9A%E4%BF%A1%E6%9E%B6%E6%9E%84%E5%AE%9E%E6%88%98%E7%AC%94%E8%AE%B0/</loc>
-    
-    <lastmod>2022-03-28</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://github.com/2022/03/24/some-notes/</loc>
-    
-    <lastmod>2022-03-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://github.com/2022/03/24/Cmake%E7%9B%B8%E5%85%B3/</loc>
-    
-    <lastmod>2022-03-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://github.com/2022/03/23/new-delete-and-malloc-free/</loc>
     
     <lastmod>2022-03-23</lastmod>
@@ -58,7 +22,7 @@
 
   <url>
     <loc>http://github.com/</loc>
-    <lastmod>2022-03-30</lastmod>
+    <lastmod>2022-03-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -68,42 +32,14 @@
   
   <url>
     <loc>http://github.com/categories/C/</loc>
-    <lastmod>2022-03-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://github.com/categories/%E7%BC%96%E8%AF%91%E7%9B%B8%E5%85%B3/</loc>
-    <lastmod>2022-03-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://github.com/categories/C/Linux/</loc>
-    <lastmod>2022-03-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://github.com/categories/Cmake/</loc>
-    <lastmod>2022-03-30</lastmod>
+    <lastmod>2022-03-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://github.com/categories/C/Algorithm/</loc>
-    <lastmod>2022-03-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://github.com/categories/Cmake/C/</loc>
-    <lastmod>2022-03-30</lastmod>
+    <lastmod>2022-03-31</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
