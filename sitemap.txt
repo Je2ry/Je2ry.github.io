@@ -2,7 +2,6 @@ http://github.com/2022/05/03/Tree/
 http://github.com/2022/05/02/%E5%AD%97%E7%AC%A6%E4%B8%B2/
 http://github.com/2022/05/02/Binary-Search/
 http://github.com/2022/04/19/%E9%93%BE%E8%A1%A8/
-http://github.com/2022/04/12/node-js%E5%AD%A6%E4%B9%A0/
 http://github.com/2022/03/31/%E5%B9%B6%E5%8F%91%E4%B8%8E%E5%A4%9A%E7%BA%BF%E7%A8%8B/
 http://github.com/2022/03/23/new-delete-and-malloc-free/
 http://github.com/
